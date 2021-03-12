@@ -1,0 +1,65 @@
+{
+ "autoname": "LED.#####",
+ "creation": "2021-02-08 10:45:08.888143",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "gift",
+  "trophies_redeemed",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "gift",
+   "fieldtype": "Link",
+   "label": "Gift",
+   "options": "Gift Claimed"
+  },
+  {
+   "fetch_from": "gift.total_trophies",
+   "fieldname": "trophies_redeemed",
+   "fieldtype": "Read Only",
+   "label": "Trophies Redeemed"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gift claim ledger",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-02-08 16:16:45.766180",
+ "modified_by": "Administrator",
+ "module": "firstu",
+ "name": "Gift claim ledger",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

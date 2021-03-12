@@ -1,0 +1,73 @@
+{
+ "autoname": "PAY.#####",
+ "creation": "2021-02-04 10:38:12.747370",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "amount",
+  "fuel_in_liters",
+  "cash_back",
+  "membership_type",
+  "fuel_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "fuel_in_liters",
+   "fieldtype": "Read Only",
+   "label": "Fuel in liters"
+  },
+  {
+   "fieldname": "cash_back",
+   "fieldtype": "Read Only",
+   "label": "Cash Back"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer ",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.membership_type",
+   "fieldname": "membership_type",
+   "fieldtype": "Read Only",
+   "label": "Membership type"
+  },
+  {
+   "fetch_from": "customer.fuel_type",
+   "fieldname": "fuel_type",
+   "fieldtype": "Read Only",
+   "label": "Fuel Type"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Int",
+   "label": "Amount"
+  }
+ ],
+ "modified": "2021-02-08 17:03:06.789840",
+ "modified_by": "Administrator",
+ "module": "firstu",
+ "name": "Fuel Payment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

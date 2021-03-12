@@ -1,0 +1,28 @@
+[
+ {
+  "align_labels_right": 0,
+  "css": null,
+  "custom_format": 0,
+  "default_print_language": "en",
+  "disabled": 0,
+  "doc_type": "Fuel Payment",
+  "docstatus": 0,
+  "doctype": "Print Format",
+  "font": "Default",
+  "format_data": "[{\"fieldname\": \"print_heading_template\", \"fieldtype\": \"Custom HTML\", \"options\": \"<div class=\\\"print-heading\\\">\\t\\t\\t\\t<h2>Fuel Payment<br><small>{{ doc.name }}</small>\\t\\t\\t\\t</h2></div>\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"customer\", \"print_hide\": 0, \"label\": \"Customer \"}, {\"fieldname\": \"amount\", \"print_hide\": 0, \"label\": \"Amount\"}, {\"fieldname\": \"fuel_in_liters\", \"print_hide\": 0, \"label\": \"Fuel in liters\"}, {\"fieldname\": \"cash_back\", \"print_hide\": 0, \"label\": \"Cash Back\"}, {\"fieldname\": \"membership_type\", \"print_hide\": 0, \"label\": \"Membership type\"}, {\"fieldname\": \"fuel_type\", \"print_hide\": 0, \"label\": \"Fuel Type\"}]",
+  "html": null,
+  "line_breaks": 0,
+  "modified": "2021-02-24 16:37:16.676154",
+  "module": "firstu",
+  "name": "Fuel Payment",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "print_format_builder": 0,
+  "print_format_type": "Jinja",
+  "raw_commands": null,
+  "raw_printing": 0,
+  "show_section_headings": 0,
+  "standard": "No"
+ }
+]

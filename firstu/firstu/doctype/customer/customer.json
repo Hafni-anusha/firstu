@@ -1,0 +1,177 @@
+{
+ "autoname": "CUS.#####",
+ "creation": "2021-02-04 10:28:54.275618",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_details_section",
+  "first_name",
+  "last_name",
+  "phone_no",
+  "primary_address",
+  "current_address",
+  "dob",
+  "email_id",
+  "membership_type",
+  "vehicle_details_section",
+  "vehicle_type",
+  "vehicle_model",
+  "vehicle_number",
+  "fuel_type",
+  "cash_back_section",
+  "total_cash_back",
+  "used_cash_back",
+  "current_cash_back",
+  "trophy_section",
+  "total",
+  "current",
+  "refuel"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone no"
+  },
+  {
+   "fieldname": "primary_address",
+   "fieldtype": "Small Text",
+   "label": "Primary Address"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Small Text",
+   "label": "Current Address"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email id"
+  },
+  {
+   "fieldname": "membership_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Membership Type",
+   "options": "\nStatus\nPrivilege",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Data",
+   "label": "Vehicle Type"
+  },
+  {
+   "fieldname": "vehicle_model",
+   "fieldtype": "Data",
+   "label": "Vehicle Model"
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Data",
+   "label": "Vehicle Number"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Fuel Type",
+   "options": "Petrol\nDiesel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cash_back_section",
+   "fieldtype": "Section Break",
+   "label": "Cash Back"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cash_back",
+   "fieldtype": "Read Only",
+   "label": "Total Cash Back"
+  },
+  {
+   "default": "0",
+   "fieldname": "used_cash_back",
+   "fieldtype": "Read Only",
+   "label": "Used Cash Back"
+  },
+  {
+   "default": "0",
+   "fieldname": "current_cash_back",
+   "fieldtype": "Read Only",
+   "label": "Current Cash Back"
+  },
+  {
+   "fieldname": "trophy_section",
+   "fieldtype": "Section Break",
+   "label": "Trophy"
+  },
+  {
+   "default": "0",
+   "fieldname": "total",
+   "fieldtype": "Read Only",
+   "label": "Total"
+  },
+  {
+   "default": "0",
+   "fieldname": "current",
+   "fieldtype": "Read Only",
+   "label": "Current"
+  },
+  {
+   "default": "0",
+   "fieldname": "refuel",
+   "fieldtype": "Read Only",
+   "label": "Refuel"
+  }
+ ],
+ "modified": "2021-02-08 16:11:44.665401",
+ "modified_by": "Administrator",
+ "module": "firstu",
+ "name": "Customer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
