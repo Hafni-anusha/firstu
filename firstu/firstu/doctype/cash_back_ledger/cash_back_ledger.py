@@ -7,6 +7,7 @@ import frappe
 from frappe.model.document import Document
 
 class CashBackledger(Document):
+	#cashback
 	def before_save(self):
 		customer=frappe.get_doc('Customer',self.customer_name)
 		if self.status == 'Redeemed':
